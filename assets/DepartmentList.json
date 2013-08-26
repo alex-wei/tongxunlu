@@ -1,0 +1,4 @@
+[
+	{'N_ID':4,'N_FilID':3,'S_DepartmentName':'总经理办公室','S_DepartmentInfo':'总经理办公室','EntityState':2,'EntityKey':{'EntitySetName':'T_Department','EntityContainerName':'Entities','EntityKeyValues':[{'Key':'N_ID','Value':4}],'IsTemporary':false}},
+	{'N_ID':3,'N_FilID':2,'S_DepartmentName':'董事长办公室','S_DepartmentInfo':'董事长办公室','EntityState':2,'EntityKey':{'EntitySetName':'T_Department','EntityContainerName':'Entities','EntityKeyValues':[{'Key':'N_ID','Value':3}],'IsTemporary':false}}
+] 

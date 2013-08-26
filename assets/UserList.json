@@ -1,0 +1,4 @@
+[
+	{'N_ID':1,'N_FilieId':2,'N_DepId':3,'S_Name':'何靖','S_Post':'经理','S_Phone':'65614890','S_Mobile':'13888734179','EntityState':2,'EntityKey':{'EntitySetName':'T_UserInfo','EntityContainerName':'Entities','EntityKeyValues':[{'Key':'N_ID','Value':1}],'IsTemporary':false}},
+	{'N_ID':2,'N_FilieId':3,'N_DepId':4,'S_Name':'李锋','S_Post':'总经理','S_Phone':'63331413','S_Mobile':'13378719126','EntityState':2,'EntityKey':{'EntitySetName':'T_UserInfo','EntityContainerName':'Entities','EntityKeyValues':[{'Key':'N_ID','Value':2}],'IsTemporary':false}}
+] 
