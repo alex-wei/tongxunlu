@@ -1,14 +1,17 @@
 package com.linuo.tongxunlu.ui;
 
-import com.linuo.tongxunlu.R;
-import com.linuo.tongxunlu.adapter.MyListViewAdapter;
-import com.linuo.tongxunlu.data.AppData;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+
+import com.linuo.tongxunlu.R;
+import com.linuo.tongxunlu.adapter.MyListViewAdapter;
+import com.linuo.tongxunlu.data.AppData;
 public class DepartmentActivity extends Activity {
 	private ListView lv;
 //	private 
@@ -21,7 +24,14 @@ public class DepartmentActivity extends Activity {
 		lv.setDivider(new ColorDrawable(Color.TRANSPARENT));
 		lv.setDividerHeight(5);
 		lv.setAdapter(new MyListViewAdapter(this, AppData.departmentList));
-		
+		lv.setOnItemClickListener(new OnItemClickListener() {
+
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				
+			}
+			
+		});
 	}
 
 	@Override
