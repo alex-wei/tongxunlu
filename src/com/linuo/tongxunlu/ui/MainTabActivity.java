@@ -28,7 +28,8 @@ public class MainTabActivity extends TabActivity {
 		TabSpec tabMyDepartment = mTabHost.newTabSpec("本部门");
 		tabMyDepartment
 				.setIndicator(getTabView(R.drawable.tab_main_nav_me, "本部门"));
-		Intent myDepartment = new Intent(this, DepartmentActivity.class);
+		Intent myDepartment = new Intent(this, DepartmentGroup.class);
+		myDepartment.addFlags(Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY);
 		tabMyDepartment.setContent(myDepartment);
 		mTabHost.addTab(tabMyDepartment);
 

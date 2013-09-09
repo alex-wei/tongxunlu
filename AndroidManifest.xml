@@ -26,6 +26,7 @@
         <activity android:name=".ui.CompanyActivity"></activity>
         <activity android:name=".ui.UnitActivity"></activity>
         <activity android:name=".ui.MoreActivity"></activity>
+        <activity android:name=".ui.DepartmentGroup"></activity>
     </application>
 
 </manifest>

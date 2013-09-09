@@ -25,9 +25,9 @@ public class DepartmentActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.department);
 		lv = (ListView) findViewById(R.id.melistview);
-		userinfoLayout=(LinearLayout) findViewById(R.id.userinfo);
-		userNameText=(TextView) findViewById(R.id.user_name);
-		UserPhoneText=(TextView) findViewById(R.id.phone_number);
+//		userinfoLayout=(LinearLayout) findViewById(R.id.userinfo);
+//		userNameText=(TextView) findViewById(R.id.user_name);
+//		UserPhoneText=(TextView) findViewById(R.id.phone_number);
 		lv.setDivider(new ColorDrawable(Color.TRANSPARENT));
 		lv.setDividerHeight(5);
 		lv.setAdapter(new MyListViewAdapter(this, AppData.departmentList));
