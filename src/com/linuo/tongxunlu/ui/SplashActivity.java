@@ -12,6 +12,7 @@ import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.xmlpull.v1.XmlPullParser;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -62,7 +63,6 @@ public class SplashActivity extends Activity {
 				Message msg = Message.obtain();
 				String content = "";
 				try {
-
 					String serverurl ="http://116.55.226.216:903/Admin/Phone/UserList.aspx";
 					URL url = new URL(serverurl);
 					HttpURLConnection conn = (HttpURLConnection) url
