@@ -9,7 +9,7 @@ public class CompanyActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 	}
-
+//zhushi 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();

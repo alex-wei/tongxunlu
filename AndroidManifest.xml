@@ -29,4 +29,5 @@
         <activity android:name=".ui.MoreActivity"></activity>
     </application>
 
+
 </manifest>

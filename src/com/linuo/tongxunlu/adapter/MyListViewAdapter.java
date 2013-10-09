@@ -42,7 +42,7 @@ public class MyListViewAdapter extends BaseAdapter {
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder mHolder = null;
-		User user=(User) AppData.departmentList.get(position);
+		User user=(User) mDataList.get(position);
 		if(null == convertView)
 		{
 			mHolder = new ViewHolder();
