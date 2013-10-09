@@ -23,6 +23,7 @@
         </activity>
           <activity android:name=".ui.MainTabActivity"></activity>
         <activity android:name=".ui.DepartmentActivity"></activity>
+        <activity android:name=".ui.ItemActivity"></activity>
         <activity android:name=".ui.CompanyActivity"></activity>
         <activity android:name=".ui.UnitActivity"></activity>
         <activity android:name=".ui.MoreActivity"></activity>

@@ -60,7 +60,7 @@ public class SplashActivity extends Activity {
 			public void run() {
 				startTime = System.currentTimeMillis();
 				Message msg = Message.obtain();
-				String content=null;
+				String content = "";
 				try {
 
 					String serverurl ="http://116.55.226.216:903/Admin/Phone/UserList.aspx";
@@ -82,10 +82,6 @@ public class SplashActivity extends Activity {
 			                        content = content + (char) i;
 			                }
 			                isr.close();
-			                subStr = content.split("<div>");
-			                int start=subStr[1].indexOf("[");
-			                int end=subStr[1].indexOf("</div>");
-			                content=subStr[1].substring(start, end);
 			                try {
 								AppData.departmentList=loadJson(content);
 							} catch (Exception e1) {
