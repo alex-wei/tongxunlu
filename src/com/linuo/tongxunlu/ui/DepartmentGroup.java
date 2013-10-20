@@ -20,7 +20,7 @@ public class DepartmentGroup extends ActivityGroup {
 		super.onCreate(savedInstanceState);
 		if (mIdList == null)
 			mIdList = new ArrayList<String>();
-		startChildActivity("DepartmentActivity", new Intent(DepartmentGroup.this,
+		startChildActivity("DepartmentActivity", new Intent(getApplicationContext(),
 				DepartmentActivity.class));
 	}
 	@Override

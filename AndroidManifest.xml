@@ -28,6 +28,7 @@
         <activity android:name=".ui.UnitActivity"></activity>
         <activity android:name=".ui.MoreActivity"></activity>
         <activity android:name=".ui.DepartmentGroup"></activity>
+        <activity android:name=".ui.DepartmentFragmentActivity"></activity>
     </application>
 
 
