@@ -120,6 +120,8 @@ public class MainTabActivity extends FragmentActivity {
 	            mStacks.get(tag).push(fragment);
 	        FragmentManager   manager         =   getSupportFragmentManager();
 	        FragmentTransaction ft            =   manager.beginTransaction();
+	        if(shouldAnimate)
+	            ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
 	        ft.replace(R.id.realtabcontent, fragment);
 	        ft.commit();
 	      }

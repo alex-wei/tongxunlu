@@ -35,6 +35,8 @@ public class SplashActivity extends Activity {
 	private static final int XML_PARSE_ERROR = 15;
 	private static final int DOWNLOAD_SUCCESS = 16;
 	private static final int DOWNLOAD_ERROR = 17;
+	private static final String OTHER_DEPARTMENT="http://116.55.226.216:903/admin/phone/DepartmentList.aspx";
+	private static final String COMPANY="http://116.55.226.216:903/admin/phone/FilialeList.aspx";
 	protected static final String TAG = "SplashActivity";
 	private long startTime;
 	private long endTime;
@@ -101,7 +103,7 @@ public class SplashActivity extends Activity {
 						msg.what = GET_INFO_SUCCESS;
 						handler.sendMessage(msg);
 					} else {
-						// ·þÎñÆ÷×´Ì¬´íÎó.
+						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½.
 						msg.what = SERVER_ERROR;
 						handler.sendMessage(msg);
 						endTime = System.currentTimeMillis();
@@ -136,9 +138,9 @@ public class SplashActivity extends Activity {
     private List<User> loadJson(String jsonStr) throws Exception {
 		List<User> users = new ArrayList<User>();
 		
-		JSONArray arr = new JSONArray(jsonStr);		// Í¨¹ý·þÎñ¶Ë´«»ØµÄ×Ö·û´®, ¹¹½¨JSONArray
+		JSONArray arr = new JSONArray(jsonStr);		// Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½Øµï¿½ï¿½Ö·ï¿½, ï¿½ï¿½ï¿½ï¿½JSONArray
 		
-		for (int i = 0; i < arr.length(); i++) {				// Ñ­»·±éÀúÃ¿Ò»¸öJSONObject
+		for (int i = 0; i < arr.length(); i++) {				// Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½JSONObject
 			JSONObject obj = arr.getJSONObject(i);
 			User user = new User();
 			user.setN_DepId(obj.getString("N_DepId"));
@@ -154,6 +156,6 @@ public class SplashActivity extends Activity {
     private void loadMainUI() {
 		Intent intent = new Intent(this, MainTabActivity.class);
 		startActivity(intent);
-		finish();// °Ñµ±Ç°µÄactivity´ÓÈÎÎñÕ»ÀïÃæÒÆ³ý
+		finish();// ï¿½Ñµï¿½Ç°ï¿½ï¿½activityï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½Æ³ï¿½
 	}
 }
